@@ -62,19 +62,19 @@ struct ContentView: View {
     let url = URL(string: "https://oleho370.github.io/heart-checker-web/")!
     
     var body: some View {
-        WebView(url: url, onMessageReceived: { message in
-            print(message)
-//            if WCSession.default.isReachable {
-//                let message = ["user": message]
-//
-//                WCSession.default.sendMessage(message, replyHandler: { replyMessage in
-//                    // handle reply message here
-//                }, errorHandler: { error in
-//                    print("Error sending message: \(error.localizedDescription)")
-//                })
-//            } else {
-//                print("Watch is not reachable")
-//            }
+        WebView(url: url, onMessageReceived: { json in
+            print(json)
+            if WCSession.default.isReachable {
+                let message = ["patient": json]
+
+                WCSession.default.sendMessage(message, replyHandler: { replyMessage in
+                    // handle reply message here
+                }, errorHandler: { error in
+                    print("Error sending message: \(error.localizedDescription)")
+                })
+            } else {
+                print("Watch is not reachable")
+            }
         })
 
     }

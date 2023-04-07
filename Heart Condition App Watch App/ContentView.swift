@@ -9,159 +9,47 @@ import SwiftUI
 import HealthKit
 import UserNotifications
 
+struct Excercise: Codable {
+    var description: String
+    var schedule: [Int]
+}
+struct Medication: Codable {
+    var medication: String
+    var dosage: String
+    var notes: String
+    var start_date: String
+    var end_date: String
+    var schedule: [[Dose]]
+}
+struct Dose: Codable {
+    var hour: Int
+    var amount: Int
+}
+struct Patient: Codable {
+    var id: String
+    var name: String
+    var excercises: [Excercise]
+    var prescriptions: [Medication]
+    
+    init() {
+        self.id = ""
+        self.name = ""
+        self.excercises = []
+        self.prescriptions = []
+    }
+}
+
 struct ContentView: View {
     @EnvironmentObject var heartManager: HeartManager
-    @StateObject var sessionManager = SessionManager()
+    @ObservedObject var sessionManager = SessionManager()
+    
+    @State private var patient = Patient()
     
     var body: some View {
+        
         VStack {
-
+            Text("Hello \(patient.name)")
             Button("Schedule Notification") {
-                struct Excercise: Codable {
-                    var description: String
-                    var schedule: [Int]
-                }
-                struct Medication: Codable {
-                    var medication: String
-                    var dosage: String
-                    var notes: String
-                    var start_date: String
-                    var end_date: String
-                    var schedule: [[Dose]]
-                }
-                struct Dose: Codable {
-                    var hour: Int
-                    var amount: Int
-                }
-                struct Patient: Codable {
-                    var id: String
-                    var name: String
-                    var excercises: [Excercise]
-                    var prescriptions: [Medication]
-                    
-                    init() {
-                        self.id = ""
-                        self.name = ""
-                        self.excercises = []
-                        self.prescriptions = []
-                    }
-                }
-
-                let json = """
-                "id": "b302bd2f-8fd2-4439-b1d8-859b536a7629",
-                    "name": "Joe",
-                    "excercises": [
-                        {
-                            "description": "Run",
-                            "schedule": [1, 1, 1, 1, 1, 1, 1]
-                        },
-                        {
-                            "description": "Swim",
-                            "schedule": [0, 0, 0, 0, 0, 0, 1]
-                        }
-                    ],
-                    "prescriptions": [
-                        {
-                            "medication": "Atorvastatin",
-                            "dosage": "40mg",
-                            "notes": "Statins to lower cholesterol levels",
-                            "start_date": "2022-01-01",
-                            "end_date": "2022-06-30",
-                            "schedule": [
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 20,
-                                        "amount": 1
-                                    }
-                                ],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 1
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "medication": "Metoprolol",
-                            "dosage": "50mg",
-                            "notes": "Beta blocker to control heart rate and blood pressure",
-                            "start_date": "2022-01-01",
-                            "end_date": "2022-06-30",
-                            "schedule": [
-                                [],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 2
-                                    },
-                                    {
-                                        "hour": 20,
-                                        "amount": 1
-                                    }
-                                ],
-                                [],
-                                [],
-                                [],
-                                [
-                                    {
-                                        "hour": 8,
-                                        "amount": 2
-                                    },
-                                    {
-                                        "hour": 20,
-                                        "amount": 1
-                                    }
-                                ],
-                                []
-                            ]
-                        }
-                    ]
-                }
-
-
-                """.data(using: .utf8)!
-
-                let decoder = JSONDecoder()
-                var patient = Patient()
-                do {
-                    patient = try decoder.decode(Patient.self, from: json)
-                } catch {
-                    // If an error is thrown, the code execution will jump to this block
-                    print("An error occurred: \(error.localizedDescription)")
-                }
-
-                print(patient.name) // Prints "Durian"
                 
                 let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
                 
@@ -232,6 +120,10 @@ struct ContentView: View {
                     print(error.localizedDescription)
                 }
             }
+        }
+        .onReceive(sessionManager.$patient) { updatedPatient in
+            print("updated patient")
+            patient = updatedPatient
         }
     }
 }

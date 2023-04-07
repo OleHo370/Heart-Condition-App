@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5CAB4D29B5710C0000252C /* HeartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CAB4C29B5710C0000252C /* HeartManager.swift */; };
+		1CB2BA5129DBAF4300334D62 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2BA5029DBAF4300334D62 /* SessionManager.swift */; };
+		1CB2BA5329DBB04B00334D62 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2BA5229DBB04B00334D62 /* SessionManager.swift */; };
+		1CC644D529B5698400F6C7C8 /* Heart_Condition_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644D429B5698400F6C7C8 /* Heart_Condition_AppApp.swift */; };
+		1CC644D729B5698400F6C7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644D629B5698400F6C7C8 /* ContentView.swift */; };
+		1CC644D929B5698600F6C7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC644D829B5698600F6C7C8 /* Assets.xcassets */; };
+		1CC644DC29B5698600F6C7C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC644DB29B5698600F6C7C8 /* Preview Assets.xcassets */; };
+		1CC644E629B5698700F6C7C8 /* Heart_Condition_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644E529B5698700F6C7C8 /* Heart_Condition_AppTests.swift */; };
+		1CC644F029B5698700F6C7C8 /* Heart_Condition_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644EF29B5698700F6C7C8 /* Heart_Condition_AppUITests.swift */; };
+		1CC644F229B5698700F6C7C8 /* Heart_Condition_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644F129B5698700F6C7C8 /* Heart_Condition_AppUITestsLaunchTests.swift */; };
+		1CC644F829B5698700F6C7C8 /* Heart Condition App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1CC644F729B5698700F6C7C8 /* Heart Condition App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CC644FD29B5698700F6C7C8 /* Heart_Condition_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644FC29B5698700F6C7C8 /* Heart_Condition_AppApp.swift */; };
+		1CC644FF29B5698700F6C7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC644FE29B5698700F6C7C8 /* ContentView.swift */; };
+		1CC6450129B5698700F6C7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6450029B5698700F6C7C8 /* Assets.xcassets */; };
+		1CC6450429B5698700F6C7C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC6450329B5698700F6C7C8 /* Preview Assets.xcassets */; };
+		1CC6450E29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6450D29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppTests.swift */; };
+		1CC6451829B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6451729B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITests.swift */; };
+		1CC6451A29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6451929B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC644E229B5698700F6C7C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC644C929B5698400F6C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC644D029B5698400F6C7C8;
+			remoteInfo = "Heart Condition App";
+		};
+		1CC644EC29B5698700F6C7C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC644C929B5698400F6C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC644D029B5698400F6C7C8;
+			remoteInfo = "Heart Condition App";
+		};
+		1CC644F929B5698700F6C7C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC644C929B5698400F6C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC644F629B5698700F6C7C8;
+			remoteInfo = "Heart Condition App Watch App";
+		};
+		1CC6450A29B5698700F6C7C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC644C929B5698400F6C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC644F629B5698700F6C7C8;
+			remoteInfo = "Heart Condition App Watch App";
+		};
+		1CC6451429B5698700F6C7C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC644C929B5698400F6C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC644F629B5698700F6C7C8;
+			remoteInfo = "Heart Condition App Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CC6452029B5698700F6C7C8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1CC644F829B5698700F6C7C8 /* Heart Condition App Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C5CAB4B29B56CA80000252C /* Heart Condition App Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Condition App Watch App.entitlements"; sourceTree = "<group>"; };
+		1C5CAB4C29B5710C0000252C /* HeartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartManager.swift; sourceTree = "<group>"; };
+		1C5CAB4E29B574960000252C /* Heart-Condition-App-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Heart-Condition-App-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1CB2BA5029DBAF4300334D62 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		1CB2BA5229DBB04B00334D62 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		1CC644D129B5698400F6C7C8 /* Heart Condition App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Condition App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC644D429B5698400F6C7C8 /* Heart_Condition_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_AppApp.swift; sourceTree = "<group>"; };
+		1CC644D629B5698400F6C7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CC644D829B5698600F6C7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC644DB29B5698600F6C7C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CC644E129B5698700F6C7C8 /* Heart Condition AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Condition AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC644E529B5698700F6C7C8 /* Heart_Condition_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_AppTests.swift; sourceTree = "<group>"; };
+		1CC644EB29B5698700F6C7C8 /* Heart Condition AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Condition AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC644EF29B5698700F6C7C8 /* Heart_Condition_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_AppUITests.swift; sourceTree = "<group>"; };
+		1CC644F129B5698700F6C7C8 /* Heart_Condition_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CC644F729B5698700F6C7C8 /* Heart Condition App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Condition App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC644FC29B5698700F6C7C8 /* Heart_Condition_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_AppApp.swift; sourceTree = "<group>"; };
+		1CC644FE29B5698700F6C7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CC6450029B5698700F6C7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC6450329B5698700F6C7C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CC6450929B5698700F6C7C8 /* Heart Condition App Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Condition App Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC6450D29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_App_Watch_AppTests.swift; sourceTree = "<group>"; };
+		1CC6451329B5698700F6C7C8 /* Heart Condition App Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Condition App Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC6451729B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_App_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		1CC6451929B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Condition_App_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC644CE29B5698400F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644DE29B5698700F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644E829B5698700F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644F429B5698700F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6450629B5698700F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6451029B5698700F6C7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC644C829B5698400F6C7C8 = {
+			isa = PBXGroup;
+			children = (
+				1CC644D329B5698400F6C7C8 /* Heart Condition App */,
+				1CC644E429B5698700F6C7C8 /* Heart Condition AppTests */,
+				1CC644EE29B5698700F6C7C8 /* Heart Condition AppUITests */,
+				1CC644FB29B5698700F6C7C8 /* Heart Condition App Watch App */,
+				1CC6450C29B5698700F6C7C8 /* Heart Condition App Watch AppTests */,
+				1CC6451629B5698700F6C7C8 /* Heart Condition App Watch AppUITests */,
+				1CC644D229B5698400F6C7C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC644D229B5698400F6C7C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC644D129B5698400F6C7C8 /* Heart Condition App.app */,
+				1CC644E129B5698700F6C7C8 /* Heart Condition AppTests.xctest */,
+				1CC644EB29B5698700F6C7C8 /* Heart Condition AppUITests.xctest */,
+				1CC644F729B5698700F6C7C8 /* Heart Condition App Watch App.app */,
+				1CC6450929B5698700F6C7C8 /* Heart Condition App Watch AppTests.xctest */,
+				1CC6451329B5698700F6C7C8 /* Heart Condition App Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC644D329B5698400F6C7C8 /* Heart Condition App */ = {
+			isa = PBXGroup;
+			children = (
+				1CC644D429B5698400F6C7C8 /* Heart_Condition_AppApp.swift */,
+				1CC644D629B5698400F6C7C8 /* ContentView.swift */,
+				1CC644D829B5698600F6C7C8 /* Assets.xcassets */,
+				1CC644DA29B5698600F6C7C8 /* Preview Content */,
+				1CB2BA5029DBAF4300334D62 /* SessionManager.swift */,
+			);
+			path = "Heart Condition App";
+			sourceTree = "<group>";
+		};
+		1CC644DA29B5698600F6C7C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CC644DB29B5698600F6C7C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CC644E429B5698700F6C7C8 /* Heart Condition AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC644E529B5698700F6C7C8 /* Heart_Condition_AppTests.swift */,
+			);
+			path = "Heart Condition AppTests";
+			sourceTree = "<group>";
+		};
+		1CC644EE29B5698700F6C7C8 /* Heart Condition AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC644EF29B5698700F6C7C8 /* Heart_Condition_AppUITests.swift */,
+				1CC644F129B5698700F6C7C8 /* Heart_Condition_AppUITestsLaunchTests.swift */,
+			);
+			path = "Heart Condition AppUITests";
+			sourceTree = "<group>";
+		};
+		1CC644FB29B5698700F6C7C8 /* Heart Condition App Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				1C5CAB4E29B574960000252C /* Heart-Condition-App-Watch-App-Info.plist */,
+				1C5CAB4B29B56CA80000252C /* Heart Condition App Watch App.entitlements */,
+				1CC644FC29B5698700F6C7C8 /* Heart_Condition_AppApp.swift */,
+				1CC644FE29B5698700F6C7C8 /* ContentView.swift */,
+				1CC6450029B5698700F6C7C8 /* Assets.xcassets */,
+				1CC6450229B5698700F6C7C8 /* Preview Content */,
+				1C5CAB4C29B5710C0000252C /* HeartManager.swift */,
+				1CB2BA5229DBB04B00334D62 /* SessionManager.swift */,
+			);
+			path = "Heart Condition App Watch App";
+			sourceTree = "<group>";
+		};
+		1CC6450229B5698700F6C7C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6450329B5698700F6C7C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CC6450C29B5698700F6C7C8 /* Heart Condition App Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6450D29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppTests.swift */,
+			);
+			path = "Heart Condition App Watch AppTests";
+			sourceTree = "<group>";
+		};
+		1CC6451629B5698700F6C7C8 /* Heart Condition App Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC6451729B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITests.swift */,
+				1CC6451929B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Heart Condition App Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC644D029B5698400F6C7C8 /* Heart Condition App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6452129B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App" */;
+			buildPhases = (
+				1CC644CD29B5698400F6C7C8 /* Sources */,
+				1CC644CE29B5698400F6C7C8 /* Frameworks */,
+				1CC644CF29B5698400F6C7C8 /* Resources */,
+				1CC6452029B5698700F6C7C8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC644FA29B5698700F6C7C8 /* PBXTargetDependency */,
+			);
+			name = "Heart Condition App";
+			productName = "Heart Condition App";
+			productReference = 1CC644D129B5698400F6C7C8 /* Heart Condition App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC644E029B5698700F6C7C8 /* Heart Condition AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6452429B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition AppTests" */;
+			buildPhases = (
+				1CC644DD29B5698700F6C7C8 /* Sources */,
+				1CC644DE29B5698700F6C7C8 /* Frameworks */,
+				1CC644DF29B5698700F6C7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC644E329B5698700F6C7C8 /* PBXTargetDependency */,
+			);
+			name = "Heart Condition AppTests";
+			productName = "Heart Condition AppTests";
+			productReference = 1CC644E129B5698700F6C7C8 /* Heart Condition AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CC644EA29B5698700F6C7C8 /* Heart Condition AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6452729B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition AppUITests" */;
+			buildPhases = (
+				1CC644E729B5698700F6C7C8 /* Sources */,
+				1CC644E829B5698700F6C7C8 /* Frameworks */,
+				1CC644E929B5698700F6C7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC644ED29B5698700F6C7C8 /* PBXTargetDependency */,
+			);
+			name = "Heart Condition AppUITests";
+			productName = "Heart Condition AppUITests";
+			productReference = 1CC644EB29B5698700F6C7C8 /* Heart Condition AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1CC644F629B5698700F6C7C8 /* Heart Condition App Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6451D29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch App" */;
+			buildPhases = (
+				1CC644F329B5698700F6C7C8 /* Sources */,
+				1CC644F429B5698700F6C7C8 /* Frameworks */,
+				1CC644F529B5698700F6C7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heart Condition App Watch App";
+			productName = "Heart Condition App Watch App";
+			productReference = 1CC644F729B5698700F6C7C8 /* Heart Condition App Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC6450829B5698700F6C7C8 /* Heart Condition App Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6452A29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch AppTests" */;
+			buildPhases = (
+				1CC6450529B5698700F6C7C8 /* Sources */,
+				1CC6450629B5698700F6C7C8 /* Frameworks */,
+				1CC6450729B5698700F6C7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC6450B29B5698700F6C7C8 /* PBXTargetDependency */,
+			);
+			name = "Heart Condition App Watch AppTests";
+			productName = "Heart Condition App Watch AppTests";
+			productReference = 1CC6450929B5698700F6C7C8 /* Heart Condition App Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CC6451229B5698700F6C7C8 /* Heart Condition App Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC6452D29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch AppUITests" */;
+			buildPhases = (
+				1CC6450F29B5698700F6C7C8 /* Sources */,
+				1CC6451029B5698700F6C7C8 /* Frameworks */,
+				1CC6451129B5698700F6C7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC6451529B5698700F6C7C8 /* PBXTargetDependency */,
+			);
+			name = "Heart Condition App Watch AppUITests";
+			productName = "Heart Condition App Watch AppUITests";
+			productReference = 1CC6451329B5698700F6C7C8 /* Heart Condition App Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC644C929B5698400F6C7C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					1CC644D029B5698400F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					1CC644E029B5698700F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1CC644D029B5698400F6C7C8;
+					};
+					1CC644EA29B5698700F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1CC644D029B5698400F6C7C8;
+					};
+					1CC644F629B5698700F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					1CC6450829B5698700F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1CC644F629B5698700F6C7C8;
+					};
+					1CC6451229B5698700F6C7C8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1CC644F629B5698700F6C7C8;
+					};
+				};
+			};
+			buildConfigurationList = 1CC644CC29B5698400F6C7C8 /* Build configuration list for PBXProject "Heart Condition App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CC644C829B5698400F6C7C8;
+			productRefGroup = 1CC644D229B5698400F6C7C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC644D029B5698400F6C7C8 /* Heart Condition App */,
+				1CC644E029B5698700F6C7C8 /* Heart Condition AppTests */,
+				1CC644EA29B5698700F6C7C8 /* Heart Condition AppUITests */,
+				1CC644F629B5698700F6C7C8 /* Heart Condition App Watch App */,
+				1CC6450829B5698700F6C7C8 /* Heart Condition App Watch AppTests */,
+				1CC6451229B5698700F6C7C8 /* Heart Condition App Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC644CF29B5698400F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC644DC29B5698600F6C7C8 /* Preview Assets.xcassets in Resources */,
+				1CC644D929B5698600F6C7C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644DF29B5698700F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644E929B5698700F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644F529B5698700F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6450429B5698700F6C7C8 /* Preview Assets.xcassets in Resources */,
+				1CC6450129B5698700F6C7C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6450729B5698700F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6451129B5698700F6C7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC644CD29B5698400F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC644D729B5698400F6C7C8 /* ContentView.swift in Sources */,
+				1CC644D529B5698400F6C7C8 /* Heart_Condition_AppApp.swift in Sources */,
+				1CB2BA5129DBAF4300334D62 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644DD29B5698700F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC644E629B5698700F6C7C8 /* Heart_Condition_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644E729B5698700F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC644F029B5698700F6C7C8 /* Heart_Condition_AppUITests.swift in Sources */,
+				1CC644F229B5698700F6C7C8 /* Heart_Condition_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC644F329B5698700F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5CAB4D29B5710C0000252C /* HeartManager.swift in Sources */,
+				1CC644FF29B5698700F6C7C8 /* ContentView.swift in Sources */,
+				1CB2BA5329DBB04B00334D62 /* SessionManager.swift in Sources */,
+				1CC644FD29B5698700F6C7C8 /* Heart_Condition_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6450529B5698700F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6450E29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC6450F29B5698700F6C7C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC6451829B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITests.swift in Sources */,
+				1CC6451A29B5698700F6C7C8 /* Heart_Condition_App_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC644E329B5698700F6C7C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC644D029B5698400F6C7C8 /* Heart Condition App */;
+			targetProxy = 1CC644E229B5698700F6C7C8 /* PBXContainerItemProxy */;
+		};
+		1CC644ED29B5698700F6C7C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC644D029B5698400F6C7C8 /* Heart Condition App */;
+			targetProxy = 1CC644EC29B5698700F6C7C8 /* PBXContainerItemProxy */;
+		};
+		1CC644FA29B5698700F6C7C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC644F629B5698700F6C7C8 /* Heart Condition App Watch App */;
+			targetProxy = 1CC644F929B5698700F6C7C8 /* PBXContainerItemProxy */;
+		};
+		1CC6450B29B5698700F6C7C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC644F629B5698700F6C7C8 /* Heart Condition App Watch App */;
+			targetProxy = 1CC6450A29B5698700F6C7C8 /* PBXContainerItemProxy */;
+		};
+		1CC6451529B5698700F6C7C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC644F629B5698700F6C7C8 /* Heart Condition App Watch App */;
+			targetProxy = 1CC6451429B5698700F6C7C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CC6451B29B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CC6451C29B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1CC6451E29B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Heart Condition App Watch App/Heart Condition App Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4SAA2252D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Heart-Condition-App-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Heart Condition App, uses the data to send to doctors";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Heart-Condition-App.Heart-Condition-App";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		1CC6451F29B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Heart Condition App Watch App/Heart Condition App Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4SAA2252D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Heart-Condition-App-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Heart Condition App, uses the data to send to doctors";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Heart-Condition-App.Heart-Condition-App";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		1CC6452229B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CC6452329B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC6452529B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Condition App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Heart Condition App";
+			};
+			name = Debug;
+		};
+		1CC6452629B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Condition App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Heart Condition App";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC6452829B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heart Condition App";
+			};
+			name = Debug;
+		};
+		1CC6452929B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heart Condition App";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC6452B29B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Condition App Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Heart Condition App Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		1CC6452C29B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Condition App Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Heart Condition App Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		1CC6452E29B5698700F6C7C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Heart Condition App Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		1CC6452F29B5698700F6C7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heart-Condition-App.Heart-Condition-App-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Heart Condition App Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC644CC29B5698400F6C7C8 /* Build configuration list for PBXProject "Heart Condition App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6451B29B5698700F6C7C8 /* Debug */,
+				1CC6451C29B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6451D29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6451E29B5698700F6C7C8 /* Debug */,
+				1CC6451F29B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6452129B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6452229B5698700F6C7C8 /* Debug */,
+				1CC6452329B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6452429B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6452529B5698700F6C7C8 /* Debug */,
+				1CC6452629B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6452729B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6452829B5698700F6C7C8 /* Debug */,
+				1CC6452929B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6452A29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6452B29B5698700F6C7C8 /* Debug */,
+				1CC6452C29B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC6452D29B5698700F6C7C8 /* Build configuration list for PBXNativeTarget "Heart Condition App Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC6452E29B5698700F6C7C8 /* Debug */,
+				1CC6452F29B5698700F6C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC644C929B5698400F6C7C8 /* Project object */;
+}

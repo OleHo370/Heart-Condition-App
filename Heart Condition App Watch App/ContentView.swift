@@ -9,11 +9,26 @@ import SwiftUI
 import HealthKit
 import UserNotifications
 
-struct Excercise: Codable {
+struct Exercise: Codable, Hashable {
     var description: String
-    var schedule: [Int]
+    var schedule: [ExerciseDay]
 }
-struct Medication: Codable {
+struct ExerciseDay: Codable, Hashable {
+    var hour: Int
+    var completed: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case hour
+        case completed
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        hour = try container.decode(Int.self, forKey: .hour)
+        completed = try container.decodeIfPresent(Bool.self, forKey: .completed) ?? false
+    }
+}
+struct Medication: Codable, Hashable {
     var medication: String
     var dosage: String
     var notes: String
@@ -21,21 +36,54 @@ struct Medication: Codable {
     var end_date: String
     var schedule: [[Dose]]
 }
-struct Dose: Codable {
+struct Dose: Codable, Hashable {
     var hour: Int
     var amount: Int
+    var completed: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case hour
+        case amount
+        case completed
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        hour = try container.decode(Int.self, forKey: .hour)
+        amount = try container.decode(Int.self, forKey: .amount)
+        completed = try container.decodeIfPresent(Bool.self, forKey: .completed) ?? false
+    }
 }
-struct Patient: Codable {
+struct Patient: Codable, Hashable {
     var id: String
     var name: String
-    var excercises: [Excercise]
+    var exercises: [Exercise]
     var prescriptions: [Medication]
     
     init() {
         self.id = ""
-        self.name = ""
-        self.excercises = []
+        self.name = "Patient"
+        self.exercises = []
         self.prescriptions = []
+    }
+}
+
+struct CheckboxToggleStyle: ToggleStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        Image(systemName: configuration.isOn ? "checkmark.square" : "square")
+            .frame(alignment: .leading)
+            .padding(.leading, 0)
+            .foregroundColor(.white)
+            .onTapGesture { configuration.isOn.toggle() }
+    }
+}
+
+struct Checkbox: View {
+    @Binding var isSelected: Bool
+    
+    var body: some View {
+        Toggle("", isOn: $isSelected).labelsHidden()
+            .toggleStyle(CheckboxToggleStyle())
     }
 }
 
@@ -44,71 +92,19 @@ struct ContentView: View {
     @ObservedObject var sessionManager = SessionManager()
     
     @State private var patient = Patient()
-    
+
     var body: some View {
-        
         VStack {
-            Text("Hello \(patient.name)")
-            Button("Schedule Notification") {
-                
-                let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-                
-                for exercise in patient.excercises {
-                    for i in 0..<7 {
-                        let hourValue = exercise.schedule[i]
-                        if hourValue == 0 {
-                            continue
-                        }
-                        let content = UNMutableNotificationContent()
-                        content.title = "Time to \(exercise.description) !"
-                        content.subtitle = "You need to \(exercise.description) for \(hourValue) hours every \(daysOfWeek[i]) "
-                        content.sound = UNNotificationSound.default
-                        var dateComponents = DateComponents();
-                        dateComponents.weekday = i;
-                        dateComponents.hour = 8;
-                        
-                        // show this notification five seconds from now
-                        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-                        
-                        // choose a random identifier
-                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                        
-                        // add our notification request
-                        UNUserNotificationCenter.current().add(request)
-                    }
-                }
-                
-                for medication in patient.prescriptions {
-                    for i in 0..<7{
-                        let doses = medication.schedule[i]
-                        for dose in doses {
-                            let content = UNMutableNotificationContent()
-                            content.title = "Time to take \(medication.medication)!"
-                            content.subtitle = "You need to take \(dose.amount) \(medication.dosage) pills of \(medication.medication) now! (\(dose.hour):00 on \(daysOfWeek[i]))"
-                            content.sound = UNNotificationSound.default
-                            var dateComponents = DateComponents();
-                            dateComponents.weekday = i;
-                            dateComponents.hour = dose.hour;
-                            
-                            // show this notification five seconds from now
-                            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-                            
-                            // choose a random identifier
-                            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                            
-                            // add our notification request
-                            UNUserNotificationCenter.current().add(request)
-                        }
-                    }
+            TabView {
+                Text("Heart Condition App")
+                    .id(0)
+                ForEach(Array(0...6), id: \.self) { day in
+                    PageView(day: day, patient: patient)
+                        .id(day+1)
                 }
             }
-           
-            
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
         }
+        .tabViewStyle(PageTabViewStyle())
         .padding()
         .onAppear {
             heartManager.requestAuthorization()
@@ -124,6 +120,69 @@ struct ContentView: View {
         .onReceive(sessionManager.$patient) { updatedPatient in
             print("updated patient")
             patient = updatedPatient
+        }
+    }
+}
+
+struct PageView: View {
+    let day: Int
+    @State var patient: Patient
+    
+    let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    
+    var body: some View {
+        
+        let red = RoundedRectangle(cornerRadius: 10)
+            .foregroundColor(Color.red)
+        let blue = RoundedRectangle(cornerRadius: 10)
+            .foregroundColor(Color.blue)
+        
+        VStack {
+            Text(daysOfWeek[day])
+                .frame(maxWidth: .infinity)
+                .fontWeight(.bold)
+                .background(Color.purple)
+      
+            List {
+                
+                ForEach(patient.exercises.indices, id: \.self) { i in
+                    let exercise = patient.exercises[i]
+                    let exerciseDay = exercise.schedule[day]
+                    let hours = exerciseDay.hour
+                    if hours > 0 {
+                        
+                        HStack() {
+                            Checkbox(isSelected: $patient.exercises[i].schedule[day].completed)
+                            Text("\(exercise.description) \(hours) hours")
+                        }
+                        .listRowBackground(red)
+                        .frame(maxWidth: .infinity, alignment: .leading) // <6>
+                        .padding(.leading, 0)
+                    }
+                }
+                
+                ForEach(patient.prescriptions.indices, id: \.self) { i in
+                    let prescription = patient.prescriptions[i]
+                    
+                    let doseArray = prescription.schedule[day]
+                    
+                    if doseArray.count > 0 {
+                        Text("\(prescription.medication) \(prescription.dosage)")
+                            .listRowBackground(blue)
+                        
+                        ForEach(doseArray.indices, id: \.self) { j in
+                            let dose = doseArray[j]
+                            HStack() {
+                                Checkbox(isSelected: $patient.prescriptions[i].schedule[day][j].completed)
+                                Text("\(String(format: "%02d", dose.hour)):00 | \(dose.amount) pills")
+                            }
+                            .listRowBackground(blue)
+                                
+                        }
+                    }
+                }
+            }
+            //.id(day)
         }
     }
 }

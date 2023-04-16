@@ -83,6 +83,7 @@
 		1C5CAB4B29B56CA80000252C /* Heart Condition App Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Condition App Watch App.entitlements"; sourceTree = "<group>"; };
 		1C5CAB4C29B5710C0000252C /* HeartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartManager.swift; sourceTree = "<group>"; };
 		1C5CAB4E29B574960000252C /* Heart-Condition-App-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Heart-Condition-App-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1CAB97C629E4DD2500CD80A4 /* Heart Condition App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Condition App.entitlements"; sourceTree = "<group>"; };
 		1CB2BA5029DBAF4300334D62 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		1CB2BA5229DBB04B00334D62 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		1CC644D129B5698400F6C7C8 /* Heart Condition App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Condition App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +183,7 @@
 		1CC644D329B5698400F6C7C8 /* Heart Condition App */ = {
 			isa = PBXGroup;
 			children = (
+				1CAB97C629E4DD2500CD80A4 /* Heart Condition App.entitlements */,
 				1CC644D429B5698400F6C7C8 /* Heart_Condition_AppApp.swift */,
 				1CC644D629B5698400F6C7C8 /* ContentView.swift */,
 				1CC644D829B5698600F6C7C8 /* Assets.xcassets */,
@@ -744,9 +746,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Heart Condition App/Heart Condition App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4SAA2252D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";
@@ -776,9 +780,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Heart Condition App/Heart Condition App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Heart Condition App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4SAA2252D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Heart Condition App";

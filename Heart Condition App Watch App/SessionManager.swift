@@ -149,17 +149,6 @@ class SessionManager: NSObject, ObservableObject, WCSessionDelegate {
         }
         let data = json.data(using: .utf8)!
         
-        // save json file
-        let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.heartapp")!
-        let filePath = containerURL.appendingPathComponent("patient.json")
-
-        do {
-            try data.write(to: filePath, options: .atomic)
-            print("File saved: \(filePath)")
-        } catch {
-            print("Error saving file: \(error.localizedDescription)")
-        }
-        
         DispatchQueue.main.async {
             self.parsePatientData(data: data)
         }

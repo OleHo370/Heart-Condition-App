@@ -68,22 +68,49 @@ struct Patient: Codable, Hashable {
     }
 }
 
+
+
+func savePatientData(patient: Patient) {
+    // saved patient data completed property data is not accurate for unknown reasons
+    
+    let encoder = JSONEncoder()
+    let data = try! encoder.encode(patient)
+    
+    // save json file
+    let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.heartapp")!
+    let filePath = containerURL.appendingPathComponent("patient.json")
+
+    do {
+        try data.write(to: filePath, options: .atomic)
+        print("File saved: \(filePath)")
+    } catch {
+        print("Error saving file: \(error.localizedDescription)")
+    }
+}
+
 struct CheckboxToggleStyle: ToggleStyle {
+    @State var patient: Patient
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         Image(systemName: configuration.isOn ? "checkmark.square" : "square")
             .frame(alignment: .leading)
             .padding(.leading, 0)
             .foregroundColor(.white)
-            .onTapGesture { configuration.isOn.toggle() }
+            .onTapGesture {
+                configuration.isOn.toggle()
+                savePatientData(patient: patient)
+            }
     }
 }
 
 struct Checkbox: View {
     @Binding var isSelected: Bool
     
+    @State var patient: Patient
+    
     var body: some View {
         Toggle("", isOn: $isSelected).labelsHidden()
-            .toggleStyle(CheckboxToggleStyle())
+            .toggleStyle(CheckboxToggleStyle(patient: patient))
     }
 }
 
@@ -96,8 +123,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView {
-                Text("Heart Condition App")
-                    .id(0)
+                VStack {
+                    // TODO display app logo
+                    Text("Heart Condition App")
+                    Text("Hello " + patient.name + "!")
+                }.id(0)
                 ForEach(Array(0...6), id: \.self) { day in
                     PageView(day: day, patient: patient)
                         .id(day+1)
@@ -152,7 +182,7 @@ struct PageView: View {
                     if hours > 0 {
                         
                         HStack() {
-                            Checkbox(isSelected: $patient.exercises[i].schedule[day].completed)
+                            Checkbox(isSelected: $patient.exercises[i].schedule[day].completed, patient: patient)
                             Text("\(exercise.description) \(hours) hours")
                         }
                         .listRowBackground(red)
@@ -173,7 +203,7 @@ struct PageView: View {
                         ForEach(doseArray.indices, id: \.self) { j in
                             let dose = doseArray[j]
                             HStack() {
-                                Checkbox(isSelected: $patient.prescriptions[i].schedule[day][j].completed)
+                                Checkbox(isSelected: $patient.prescriptions[i].schedule[day][j].completed, patient: patient)
                                 Text("\(String(format: "%02d", dose.hour)):00 | \(dose.amount) pills")
                             }
                             .listRowBackground(blue)
